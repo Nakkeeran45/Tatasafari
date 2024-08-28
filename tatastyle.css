@@ -1,0 +1,396 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.249);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    /* position: fixed;
+    z-index: 100; */
+}
+nav .nav-items{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+}
+nav .nav-items a{
+    text-decoration: none;
+    color: black;
+    font-family: "Noto Sans",sans-serif;
+    font-weight: 500;
+}
+nav a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+}
+a:hover::before{
+    width: 100%;
+    transition: all 3s linear;
+}
+nav .nav-icon{
+    display: flex;
+    gap: 30px;
+}
+
+/* contact  */
+.contact{
+    height: 60px;
+    width: 100%;
+    background-color:rgb(71,78,78);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: -1px -1px 10px black;
+    .call,.test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        svg{
+            animation: zoom-up 0.5s linear infinite alternate;
+        }
+    }
+}
+@keyframes zoom-up {
+    to{
+        transform: scale(1.2);
+    }
+    
+}
+.primary-link{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+/* Home */
+.home{
+    height: 90vh;
+    width: 100%;
+    /* .right-side{
+        height: 100%;
+        width: 40%;
+        background-color: rgb(202,172,124);
+        position: absolute;
+        right: 0;
+    } */
+    background: linear-gradient(90deg, transparent 55%, rgb(202,172,124) 55%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        width: 450px;
+        text-align: center;
+    }
+    .home-text{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.primary-para{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.primary-head{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4rem; 
+}
+.bosh .book{
+    height: 40px;
+    width: 130px;
+    font-family: "Noto Sans", sans-serif;
+    border: 2px #307FE2 solid;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 100px;
+    /* url(tatastyle.css) */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    a{
+    color: #307FE2;
+    text-decoration: none;
+    }
+}
+.book1{
+    height: 40px;
+    width: 150px;
+    font-size: 1.1rem;
+    font-family: "Noto Sans", sans-serif;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -60px;
+    a{
+    color: #307FE2;
+    text-decoration: none;
+    }
+    svg{
+        color: #307FE2;
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        margin-top: -25px;
+        margin-left: 45px;
+        display: flex;
+        align-items: center;
+    }
+} 
+.section-price{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(71,78,78);
+    display: flex;
+    color: white;
+    .price-left{
+        height: 100vh;
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 70px;
+        .loc{
+            height: 30px;
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 170px;
+            border-bottom: 2px solid white;
+            background-color: transparent;
+            p{
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 400;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .price-right{
+        height: 85%;
+        width: 50%;
+        background-color:rgb(71,78,78);
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+        .amount{
+        font-size: 1rem;
+        font-family: "Noto Sans", sans-serif;
+        }
+        .amount1{
+            font-size: 3rem;
+            font-family: "Noto Sans", sans-serif;
+            }
+        .amount2{
+                font-size: 1rem;
+                font-family: "Noto Sans", sans-serif;
+                }
+        .see{
+            height: 50px;
+            width:200px;
+            border: 2px solid white;
+            font-size: 1.1rem;
+            font-family:"Noto Sans", sans-serif ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: 70px;
+        }            
+}
+}
+.loc:hover{
+    cursor: pointer;
+}
+.secondary-para{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.cities{
+    height: 300px;
+    width: 310px;
+    background-color: #212529;
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    top: 790px;
+    left: 70px;
+    border: none;
+    color: white;
+    p{
+        line-height: 30px;
+    }
+}
+.cities::-webkit-scrollbar{
+    width: 10px;
+
+ }
+ .cities::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: gainsboro;
+ }
+ .cities::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 5px rgb(0,0,0,0.5) inset;
+    height: 100px;
+ }
+
+ /* design section */
+ .design{
+    height: 200rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    .design-1{
+        width: 90%;
+        .primary-head{
+            text-align: center;
+            font-size: 3rem;
+            color: #282828;
+         }
+        
+         .primary-para{
+            text-align: center;
+            font-size: 1.5rem;
+            color: #7A8084;
+         }
+        
+    }
+    .design-grid{
+        width: 90%;
+        height: 110rem;
+        display: grid;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "l1 r1"
+                            "r2 l2"
+                            "l3 r3"
+                            "r4 l4";
+        row-gap: 20px;
+        .l1{
+            grid-area: l1;
+        }
+        .r1{
+            grid-area: r1;
+            background-image: url("https://s7ap1.scene7.com/is/image/tatamotors/grille-crop?$TT-614-400-D$&fit=crop&fmt=webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .l2{
+            grid-area: l2;
+        }
+        .r2{
+            grid-area: r2;
+            background-image: url("https://s7ap1.scene7.com/is/image/tatamotors/oyster-white-interior-theme?$TT-614-400-D$&fit=crop&fmt=webp");
+            background-repeat: no-repeat;
+            background-size: cover;         
+        }
+        .l3{
+            grid-area: l3;
+        }
+        .r3{
+            grid-area: r3;
+            background-image: url("https://s7ap1.scene7.com/is/image/tatamotors/MultiMoodLights-0?$IS-1020-555-D$&fit=crop&fmt=webp-alpha");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .l4{
+            grid-area: l4;
+        }
+        .r4{
+            grid-area: r4;
+            background-image: url("https://s7ap1.scene7.com/is/image/tatamotors/powered-tail-gate-new-safari?$TT-614-400-D$&fit=crop&fmt=webp");
+        }
+        .pic1{
+            height: 30px;
+            width: 40%;
+            margin-top: 130px;
+            margin-left:30px ;
+            font-family:"Noto Sans", sans-serif ;
+            a{
+                color: #307FE2;
+                text-decoration: none;
+                }
+                svg{
+                    color: #307FE2;
+                    position: absolute;
+                    height: 25px;
+                    width: 25px;
+                    margin-top: -22px;
+                    margin-left: 220px;
+                    display: flex;
+                    align-items: center;
+                }
+        }
+    }  
+    .big-im{
+        width: 90%;
+        height: 50%;
+        padding: 20px;
+        img{
+            width: 100%;
+            height: 90%;
+        }
+        
+    } 
+ }
+ /* safety section */
+ .safety{
+    height: 150rem;
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+    flex-direction:column;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "l1 r1"
+                          "r2 l2"
+                          "r3 l3";
+    .l1{
+        grid-area: l1;
+    }                      
+    .safe{
+      .primary-para{
+        text-align: center;
+      }
+      .primary-head{
+        text-align: center;
+      } 
+    }
+      
+}
+
+
+ 
+ 
